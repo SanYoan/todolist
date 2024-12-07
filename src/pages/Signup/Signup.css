@@ -1,0 +1,122 @@
+.login {
+    width: 320px;
+    padding: 30px;
+}
+
+.login__field {
+    padding: 20px 0px;
+    position: relative;
+}
+
+.login__icon {
+    position: absolute;
+    top: 30px;
+    color: #2922a6;
+}
+
+.login__input {
+    border: none;
+    border-bottom: 2px solid #1f1fd1;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 75%;
+    transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+    outline: none;
+    border-bottom-color: #0900b3;
+}
+
+.login__submit {
+    background: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #160cdc;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #0c00f9;
+    box-shadow: 0px 2px 2px #100666;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.login__submit:active,
+.login__submit:focus {
+    border-color: #1b1586;
+    outline: none;
+}
+
+#btn_submit:hover {
+    transition: 0.3s ease-in;
+    color: white
+}
+
+.login__submit:hover {
+    background-color: #14f0e1;
+    transition: 0.3s ease-in;
+}
+
+.button__icon {
+    font-size: 24px;
+    margin-left: auto;
+    color: #0c00fa;
+}
+
+.social-login {
+    position: absolute;
+    width: 160px;
+    text-align: center;
+    bottom: -10px;
+    right: 0px;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-login__icon {
+    padding: 20px 10px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 0px 8px #14f0e1;
+}
+
+.social-login__icon:hover {
+    transform: scale(1.5);
+}
+
+.button__text {
+    text-decoration: none;
+    color: #0900b3;
+    transition: 0.3s ease-in;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.button:hover .button__text {
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.button__icon.fas.fa-chevron-right {
+    transition: 0.3s ease-in;
+}
+
+.button:hover .button__icon.fas.fa-chevron-right {
+    color: white;
+    transition: 0.3s ease-in;
+}

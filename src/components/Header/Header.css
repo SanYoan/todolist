@@ -1,0 +1,42 @@
+/** Header **/
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+nav {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+
+.nav-link {
+    border-bottom: transparent 4px solid;
+    padding-bottom: 4px;
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.navbar-brand {
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.navbar-brand:hover {
+    transition: 0.2s ease-in;
+}
+
+
+
+.nav-link:hover {
+    border-bottom: 4px rgb(0, 153, 255) solid;
+    padding-bottom: 4px;
+    transition: 0.2s ease-in;
+}
+
+.nav-link.active {
+    border-bottom: 4px rgb(0, 153, 255) solid;
+}

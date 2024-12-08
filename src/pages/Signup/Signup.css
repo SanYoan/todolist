@@ -1,10 +1,10 @@
 .login {
-    width: 320px;
-    padding: 30px;
+    width: auto;
+    padding: 20px;
 }
 
 .login__field {
-    padding: 20px 0px;
+    padding: 18px 0px;
     position: relative;
 }
 
@@ -35,7 +35,6 @@
 .login__submit {
     background: #fff;
     font-size: 14px;
-    margin-top: 30px;
     padding: 16px 20px;
     border-radius: 26px;
     border: 1px solid #160cdc;
@@ -64,6 +63,10 @@
 .login__submit:hover {
     background-color: #14f0e1;
     transition: 0.3s ease-in;
+}
+
+.signup_btn {
+    margin-top: 50px;
 }
 
 .button__icon {

@@ -38,7 +38,7 @@ function Signup() {
                 />
               </div>
               {/* Bouton s'inscrire */}
-              <button className="button login__submit">
+              <button className="button login__submit signup_btn">
                 <Link to="/login" className="button__text">
                   S'inscrire
                 </Link>

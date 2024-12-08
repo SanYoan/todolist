@@ -1,3 +1,4 @@
+/* Style global du formulaire */
 #list1 .form-control {
     border-color: transparent;
 }
@@ -9,4 +10,190 @@
 
 #list1 .select-input.form-control[readonly]:not([disabled]) {
     background-color: #fbfbfb;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    /* Styles pour l'input de la nouvelle tâche */
+    #exampleFormControlInput1 {
+        font-size: 12px;
+        /* Réduction de la taille de police pour les petits écrans */
+        font-weight: 700;
+    }
+
+    /* Bouton ajouté */
+    .btn.btn-primary {
+        font-size: 14px;
+        /* Plus petit pour correspondre à la taille de l'écran */
+        padding: 10px 20px;
+        /* Augmenter la taille du bouton pour une meilleure visibilité */
+    }
+
+    /* Conteneur du filtre et tri */
+    .d-flex.justify-content-end.align-items-center.mb-4.pt-2.pb-3 {
+        flex-direction: column;
+        /* Empiler les éléments verticalement */
+        gap: 10px;
+        /* Espacement entre les éléments */
+    }
+
+    select {
+        width: 100%;
+        /* S'assurer que les sélecteurs prennent toute la largeur */
+        text-align: center;
+        /* Centrer les éléments pour un meilleur rendu */
+        margin-bottom: 10px;
+        /* Espacement entre les sélecteurs */
+    }
+
+    .fa-sort-amount-down-alt {
+        font-size: 26px;
+        /* Agrandir l'icône pour qu'elle soit bien visible */
+    }
+
+    .my-4 {
+        margin-top: 0 !important;
+        /* Réduire l'espace supérieur pour les petits écrans */
+    }
+
+    .py-4 {
+        padding: 5px !important;
+        /* Réduire les espaces pour économiser de l'espace */
+    }
+
+    .lead {
+        font-size: 0.9rem;
+        /* Ajuster la taille du texte des tâches */
+    }
+
+    /* Liste des tâches */
+    .list-group.list-group-horizontal.rounded-0.bg-transparent {
+        width: 100%;
+        /* Assurer que la liste prend toute la largeur */
+        display: block;
+        /* Passer à un mode d'affichage en bloc */
+    }
+
+    .list-group-item.px-3.py-1.d-flex.align-items-center.flex-grow-1.border-0.bg-transparent {
+        padding: 0 !important;
+        /* Réduire l'espace interne */
+    }
+
+    .list-group-item.d-flex.align-items-center.ps-0.pe-3.py-1.rounded-0.border-0.bg-transparent {
+        padding: 0 !important;
+        /* Réduire l'espace interne */
+    }
+
+    /* Ajustements pour les actions (éditer, supprimer) */
+    .list-group-item.ps-3.pe-0.py-1.rounded-0.border-0.bg-transparent {
+        flex-direction: column;
+        gap: 5px;
+        /* Espacement vertical entre les icônes d'actions */
+    }
+
+    .text-end.text-muted {
+        text-align: left !important;
+        /* Ajuster la position des infos de création à gauche */
+    }
+
+    .text-end.text-muted .small {
+        font-size: 12px;
+        /* Réduire la taille de la date */
+    }
+
+    /* Mise à jour de la largeur du texte */
+    .lead.fw-normal.mb-0.bg-body-tertiary.w-100.ms-n2.ps-2.py-1.rounded {
+        font-size: 0.85rem;
+        /* Réduction de la taille du texte des tâches */
+    }
+
+    /* Ajouter un peu de marge en bas pour plus d'espace sur les petits écrans */
+    .list-group-item {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Sur les très petits écrans (mobiles), réduire encore plus les tailles */
+    .btn.btn-primary {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .d-flex.justify-content-end.align-items-center.mb-4.pt-2.pb-3 {
+        flex-direction: column;
+        /* Empiler complètement les éléments */
+        gap: 5px;
+    }
+
+    select {
+        width: 100%;
+        /* Sélecteurs à 100% de largeur */
+        margin-bottom: 10px;
+    }
+
+    .fa-sort-amount-down-alt {
+        font-size: 24px;
+        /* Réduction des icônes */
+    }
+
+    .row {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    p {
+        font-size: 0.8rem !important;
+        /* Réduction supplémentaire de la taille du texte */
+    }
+
+    .list-group.list-group-horizontal.rounded-0.bg-transparent {
+        display: block;
+        /* Empiler les éléments verticalement pour les petits écrans */
+    }
+
+    .list-group-item.px-3.py-1.d-flex.align-items-center.flex-grow-1.border-0.bg-transparent {
+        padding: 10px 0;
+        /* Un peu d'espace vertical */
+    }
+
+    ul {
+        padding: 2px !important;
+        display: flex !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        border: 1px solid rgba(0, 0, 255, 0.411);
+        margin: 5px;
+        align-items: center;
+    }
+
+    .justify-content-end {
+        justify-content: center !important;
+    }
+
+    .rounded-0 {
+        border-radius: 10px !important;
+    }
+
+    li {
+        padding: 0 !important;
+    }
+
+    .list-group-item.ps-3.pe-0.py-1.rounded-0.border-0.bg-transparent {
+        padding: 0 !important;
+    }
+
+    .text-end.text-muted {
+        text-align: left;
+        font-size: 10px;
+        /* Réduire encore la taille des dates */
+    }
+
+    .task_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

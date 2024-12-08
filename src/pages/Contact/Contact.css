@@ -12,9 +12,8 @@
     border: none;
     background-color: #00c8ffc5;
     resize: none;
-    padding: 10px;
-    width: 19rem;
-    height: 10rem;
+    padding: 10px 0 70px 10px;
+    width: 100%;
     border-radius: 10px;
     border: solid 2px black
 }

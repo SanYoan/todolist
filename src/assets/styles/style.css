@@ -5,34 +5,54 @@
     margin: 0;
     padding: 0;
     font-family: Raleway, sans-serif;
+    height: auto;
 }
 
+
+
+
+
+body {
+    -webkit-overflow-scrolling: touch;
+    /* Améliore le défilement sur les appareils iOS */
+    height: 100% !important;
+
+}
+
+html,
 body {
     background: linear-gradient(90deg, #9fcbdf, #2e498f);
-    height: 100vh;
-    overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .container {
     display: flex;
-    margin-top: 100px;
+    margin-top: 80px;
     justify-content: center;
     min-height: 50vh;
+    width: auto;
 }
 
 .screen {
     background: linear-gradient(90deg, #20739a, #0e05bb);
     position: relative;
-    height: 600px;
-    width: 360px;
+    height: 560px;
+    width: 30%;
     box-shadow: 0px 0px 24px #10bde8;
+    overflow: hidden;
+    text-align: center;
 }
 
 .screen__content {
     z-index: 1;
     position: relative;
     height: 100%;
+    width: 100%;
 }
 
 .screen__background {
@@ -88,6 +108,7 @@ body {
     border-radius: 60px;
 }
 
+
 a:visited {
     text-decoration: none;
 }
@@ -112,4 +133,19 @@ a:visited {
 .fade-exit-active {
     opacity: 0;
     transition: opacity 500ms ease-in-out;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        /* Ajuste les marges pour les petits écrans */
+
+    }
+
+    .screen {
+        height: 520px;
+        width: 100%;
+    }
+
 }
